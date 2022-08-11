@@ -33,3 +33,11 @@ updates:
     ignore:
       - dependency-name: node
         update-types: ["version-update:semver-major"]
+
+  - package-ecosystem: "docker"
+    directory: "/golang:1.19.0"
+    schedule:
+      interval: "daily"
+    ignore:
+      - dependency-name: golang
+        update-types: ["version-update:semver-minor"]
