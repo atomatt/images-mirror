@@ -9,3 +9,11 @@ updates:
     directory: "/golang"
     schedule:
       interval: "daily"
+
+  - package-ecosystem: "docker"
+    directory: "/golang:1.18"
+    schedule:
+      interval: "daily"
+    ignore:
+      - dependency-name: golang
+        update-types: ["version-update:semver-minor"]
