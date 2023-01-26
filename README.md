@@ -28,5 +28,6 @@ Notes:
 TODO:
 
 * Simple script to bootstrap an image at a specific semver range.
+* Check these would actually be useful from an application's PoV
 * Add hashes so images are really pinned and maybe even change if upstream does
   something weird.
