@@ -65,3 +65,11 @@ updates:
     ignore:
       - dependency-name: python
         update-types: [version-update:semver-major, version-update:semver-minor]
+
+  - package-ecosystem: docker
+    directory: /golang:1.20
+    schedule:
+      interval: daily
+    ignore:
+      - dependency-name: golang
+        update-types: [version-update:semver-major, version-update:semver-minor]
