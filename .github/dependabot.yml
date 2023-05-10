@@ -16,7 +16,7 @@ updates:
       interval: "daily"
     ignore:
       - dependency-name: golang
-        update-types: ["version-update:semver-minor"]
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
 
   - package-ecosystem: "docker"
     directory: "/node:16"
@@ -40,4 +40,4 @@ updates:
       interval: "daily"
     ignore:
       - dependency-name: golang
-        update-types: ["version-update:semver-patch"]
+        update-types: ["version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch"]
