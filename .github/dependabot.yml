@@ -49,3 +49,11 @@ updates:
     ignore:
       - dependency-name: python
         update-types: [version-update:semver-major]
+
+  - package-ecosystem: docker
+    directory: /python:3.10
+    schedule:
+      interval: daily
+    ignore:
+      - dependency-name: python
+        update-types: [version-update:semver-major, version-update:semver-minor]
