@@ -4,6 +4,13 @@ Simple experiment to stick something in between applications and images
 published by third parties to at least give a chance to review what changed
 upstream. All automated as much as possibe and sensible.
 
+Goals:
+
+* Collate a catalog of trusted upstream images
+* Notify when upstream images change and update catalog
+* Allow applications to track images at appropriate semver range
+* Easy to maintain
+
 The idea is these images pin (sort of) to the latest image in the $version's
 semver range, applications can use $org/golang:$version to track a floating but
 trusted image, dependabot PRs help keep the images fresh.
