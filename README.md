@@ -10,7 +10,7 @@ trusted image, dependabot PRs help keep the images fresh.
 
 For example:
 
-* golang starts at golang:1.0.0 and floats in the golang:1.x range
+* golang starts at golang:1.0.0 and floats in the golang:x range
 * golang:1 starts at golang:1.0.0 and floats in the golang:1.x range
 * golang:1.2 starts at golang:1.2.0 and floats in the golang:1.2.x range
 * golang:1.2.3 starts at golang:1.2.3 and floats in the golang:1.2.3 range
