@@ -45,12 +45,18 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      # Build and push Docker image with Buildx (don't push on PR)
-      # https://github.com/docker/build-push-action
-      - name: Build and push Docker image
-        id: build-and-push
+      - name: Build golang
+        id: build-golang
         uses: docker/build-push-action@0565240e2d4ab88bba5387d719585280857ece09 # v5.0.0
         with:
           context: ./golang
           push: ${{ github.event_name != 'pull_request' }}
           tags: ghcr.io/atomatt/images-mirror/golang
+          
+      - name: Build golang:1.20
+        id: build-golang-1.20
+        uses: docker/build-push-action@0565240e2d4ab88bba5387d719585280857ece09 # v5.0.0
+        with:
+          context: ./golang
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: ghcr.io/atomatt/images-mirror/golang:1.20
