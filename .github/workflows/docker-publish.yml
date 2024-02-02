@@ -53,4 +53,4 @@ jobs:
         with:
           context: ./golang
           push: ${{ github.event_name != 'pull_request' }}
-          tags: atomatt/images-mirror/golang
+          tags: ghcr.io/atomatt/images-mirror/golang
