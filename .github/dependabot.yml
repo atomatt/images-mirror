@@ -86,3 +86,8 @@ updates:
     directory: /keycloak
     schedule:
       interval: daily
+
+  - package-ecosystem: docker
+    directory: /terraform
+    schedule:
+      interval: daily
