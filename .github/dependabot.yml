@@ -96,3 +96,11 @@ updates:
     directory: /node
     schedule:
       interval: daily
+
+  - package-ecosystem: docker
+    directory: /golang:latest
+    schedule:
+      interval: daily
+    ignore:
+      - dependency-name: golang
+        update-types: [version-update:semver-major]
