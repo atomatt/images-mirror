@@ -91,3 +91,8 @@ updates:
     directory: /terraform
     schedule:
       interval: daily
+
+  - package-ecosystem: docker
+    directory: /node
+    schedule:
+      interval: daily
