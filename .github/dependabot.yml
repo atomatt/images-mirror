@@ -104,3 +104,11 @@ updates:
     ignore:
       - dependency-name: golang
         update-types: [version-update:semver-major]
+
+  - package-ecosystem: docker
+    directory: /traefik:v3
+    schedule:
+      interval: daily
+    ignore:
+      - dependency-name: traefik
+        update-types: [version-update:semver-major]
