@@ -1,1 +1,1 @@
-FROM python:3.10.15
+FROM python:3.10.16
